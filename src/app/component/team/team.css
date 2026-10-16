@@ -1,0 +1,29 @@
+:host { display: block; }
+
+.page-content {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 42px clamp(28px, 6vw, 88px) 25px;
+}
+
+.team-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.section-kicker { color: #a0aaa3; font-size: 12px; font-weight: 600; }
+.team-heading h1 { margin: 7px 0 5px; color: #2d4238; font-size: 30px; font-weight: 600; letter-spacing: -.035em; }
+.team-heading p { margin: 0; color: #8b9890; font-size: 13px; }
+.team-badge { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; padding: 8px 12px; border: 1px solid #e8eee7; border-radius: 30px; background: #fff; color: #829087; font-size: 11px; }
+.team-badge span { width: 6px; height: 6px; border-radius: 50%; background: #91aa8c; }
+.page-footer { display: flex; align-items: center; gap: 8px; margin-top: 34px; color: #a1aaa3; font-size: 11px; }
+.footer-mark { color: #78917b; font-size: 14px; font-weight: 700; }
+
+@media (max-width: 680px) {
+  .page-content { padding: 30px 18px 22px; }
+  .team-heading { margin-bottom: 20px; }
+  .team-heading h1 { font-size: 26px; }
+  .team-badge { display: none; }
+}
