@@ -24,7 +24,7 @@ describe('App', () => {
     await fixture.whenStable();
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('מקום נעים לנהל');
+    expect(compiled.querySelector('h1')?.textContent).toContain('ברוכה הבאה למרחב הניהולי');
   });
 
   it('should open the team directory on its own page', async () => {
@@ -36,6 +36,6 @@ describe('App', () => {
 
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('הצוות שלי');
-    expect(compiled.querySelectorAll('.user-card')).toHaveLength(6);
+    expect(compiled.querySelectorAll('app-users article')).toHaveLength(6);
   });
 });
