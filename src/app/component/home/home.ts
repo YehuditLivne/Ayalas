@@ -1,15 +1,10 @@
 import { Component } from '@angular/core';
-import { Users } from './users/users';
+import { RouterLink } from '@angular/router';
+import { Users } from '../users/users';
 
 @Component({
-  imports: [Users],
+  imports: [RouterLink, Users],
   selector: 'app-home',
-  styleUrl: './home.css',
   templateUrl: './home.html',
 })
-export class Home {
-  OpenUsers()
-  {
-    
-  }
-}
+export class Home {}

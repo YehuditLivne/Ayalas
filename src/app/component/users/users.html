@@ -1,0 +1,10 @@
+@for(item of users; track item.name) {
+  <article>
+    <h2>{{ item.name }}</h2>
+    <p><a href="mailto:{{ item.email }}">{{ item.email }}</a></p>
+    <p>טלפון: {{ item.phone }}</p>
+    <p>כתובת: {{ item.address }}</p>
+    <button type="button" (click)="editUser(item.name)">עריכה</button>
+    <button type="button" (click)="deleteUser(item.name)">הסרה</button>
+  </article>
+}
